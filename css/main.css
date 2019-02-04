@@ -27,10 +27,10 @@ input[type="checkbox"]:invalid + label::before {
   color: #fff;
 }
 
-.is-validated
-
-.error-messafe:first-child,
-input:invalid + .error-message,
-input:invalid + label + .error-messafe {
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + error-message;
+.is-validated:invalid + error-message,
+.is-validated:invalid + label + error-message {
   display: block;
 }
